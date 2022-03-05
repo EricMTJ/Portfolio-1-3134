@@ -6,6 +6,14 @@
 <body>
 
 <div>
+    <?php
+    if(isset($_POST['create'])){
+        echo 'Submitted';
+        }
+    ?>
+</div>
+
+<div>
     <form action="login.php" method="post">
         <div class="container">
             <h1>Enrollment</h1>
@@ -16,6 +24,8 @@
 
             <label for="lastname"> <b>Last Name</b> </label>
             <input type="text" name="lastname" required>
+
+            <input type="submit" name="submit" value="Enroll">
 
         </div>
     </form>
